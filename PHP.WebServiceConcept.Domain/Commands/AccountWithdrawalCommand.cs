@@ -4,13 +4,13 @@ using System.Text;
 
 namespace PHP.WebServiceConcept.Domain.Commands
 {
-    public class DepositCommand
+    public class AccountWithdrawalCommand
     {
-        public string AccountId { get; }
+        public string AccountId { get; set; }
         public decimal Amount { get; set; }
-        public string SourceId { get; }
+        public string SourceId { get; set; }
 
-        public DepositCommand(string accountId, string sourceId)
+        public AccountWithdrawalCommand(string accountId, string sourceId)
         {
             if (String.IsNullOrEmpty(accountId))
                 throw new ArgumentException("accountId must be a non-empty string", nameof(accountId));

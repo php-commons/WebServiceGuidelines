@@ -9,8 +9,8 @@ namespace PHP.WebServiceConcept.Domain.Entities
         public const string DepositTransactionType = "Deposit";
         public const string WithdrawalTransactionType = "Withdrawal";
 
-        // We use private backing fields and public properties
-        // to support Entity Framework Core.
+        // Having private this helps with persistence in EF Core. 
+        // HINT: But, is that a good thing?
         private Account _account;
         private string _transactionType;
         private string _transactionId;
@@ -25,12 +25,7 @@ namespace PHP.WebServiceConcept.Domain.Entities
         public DateTime SourceDateTime => _sourceDateTime;
         public DateTime? ProcessedOnDateTime => _processedOnDateTime;
         public decimal TransactionAmount => _transactionAmount;
-
-        public Transaction()
-        {
-            
-        }
-
+        
         public Transaction(Account account, string transactionType, decimal amount)
         {
             if (account == null)

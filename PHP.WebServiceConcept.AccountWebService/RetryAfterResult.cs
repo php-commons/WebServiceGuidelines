@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
 
-namespace PHP.WebServiceConcept.AccountService
+namespace PHP.WebServiceConcept.AccountWebService
 {
     public class RetryAfterResult : IActionResult
     {

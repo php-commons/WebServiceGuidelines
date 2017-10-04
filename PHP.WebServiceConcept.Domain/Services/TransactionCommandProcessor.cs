@@ -19,7 +19,7 @@ namespace PHP.WebServiceConcept.Domain.Services
             _transactionRepository = transactionRepository;
         }
 
-        public async Task<CreateTransactionResponse> ExecuteCommandAsync(DepositCommand command)
+        public async Task<CreateTransactionResponse> ExecuteCommandAsync(AccountDepositCommand command)
         {
             if (command == null)
                 throw new ArgumentNullException(nameof(command));
@@ -39,7 +39,7 @@ namespace PHP.WebServiceConcept.Domain.Services
             return new CreateTransactionResponse(newTransaction.TransactionId);
         }
 
-        public async Task<CreateTransactionResponse> ExecuteCommandAsync(WithdrawalCommand command)
+        public async Task<CreateTransactionResponse> ExecuteCommandAsync(AccountWithdrawalCommand command)
         {
             if (command == null)
                 throw new ArgumentNullException(nameof(command));

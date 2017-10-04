@@ -9,6 +9,6 @@ namespace PHP.WebServiceConcept.Domain
 {
     public interface IAccountCommandProcessor
     {
-        Task<CreateAccountResponse> ExecuteCommandAsync(CreateAccountCommand command);
+        Task<CreateAccountResponse> ExecuteCommandAsync(AccountCreateCommand command);
     }
 }

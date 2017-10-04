@@ -9,7 +9,7 @@ namespace PHP.WebServiceConcept.Domain
 {
     public interface ITransactionCommandProcessor
     {
-        Task<CreateTransactionResponse> ExecuteCommandAsync(DepositCommand command);
-        Task<CreateTransactionResponse> ExecuteCommandAsync(WithdrawalCommand command);
+        Task<CreateTransactionResponse> ExecuteCommandAsync(AccountDepositCommand command);
+        Task<CreateTransactionResponse> ExecuteCommandAsync(AccountWithdrawalCommand command);
     }
 }

@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using PHP.WebServiceConcept.Domain;
 using PHP.WebServiceConcept.Domain.Queries;
 
-namespace PHP.WebServiceConcept.AccountService.Controllers
+namespace PHP.WebServiceConcept.AccountWebService.Controllers
 {
     [Route("api/[controller]")]
     public class TransactionController : Controller
@@ -33,5 +31,7 @@ namespace PHP.WebServiceConcept.AccountService.Controllers
 
             return Ok(response);
         }
+        
+        // HINT: add command to process transaction there. 
     }
 }

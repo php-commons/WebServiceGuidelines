@@ -1,21 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.AspNetCore.Mvc.ViewComponents;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using PHP.WebServiceConcept.Domain;
 using PHP.WebServiceConcept.Persistence;
 using SimpleInjector;
 using SimpleInjector.Integration.AspNetCore.Mvc;
 
-namespace PHP.WebServiceConcept.AccountService
+namespace PHP.WebServiceConcept.AccountWebService
 {
     public class Startup
     {

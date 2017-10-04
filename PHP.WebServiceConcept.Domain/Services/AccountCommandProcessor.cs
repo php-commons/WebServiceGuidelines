@@ -17,7 +17,7 @@ namespace PHP.WebServiceConcept.Domain.Services
             _accountRepository = accountRepository;
         }
 
-        public async Task<CreateAccountResponse> ExecuteCommandAsync(CreateAccountCommand command)
+        public async Task<CreateAccountResponse> ExecuteCommandAsync(AccountCreateCommand command)
         {
             var newAccountId = CreateRandomAccountId();
             while (await _accountRepository.AccountExistsAsync(newAccountId) == false)
