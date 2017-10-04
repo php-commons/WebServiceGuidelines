@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PHP.WebServiceConcept.Domain", "PHP.WebServiceConcept.Domain\PHP.WebServiceConcept.Domain.csproj", "{BF525E0D-8CF3-40A9-B72E-F59BE828ECCA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PHP.WebServiceConcept.Persistence", "PHP.WebServiceConcept.Persistence\PHP.WebServiceConcept.Persistence.csproj", "{B30382B1-5D65-496A-8663-E19DE68C010F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PHP.WebServiceConcept.AccountService", "PHP.WebServiceConcept.AccountService\PHP.WebServiceConcept.AccountService.csproj", "{51532CBF-26F8-4C34-9253-84F1942CAF80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHP.WebServiceConcept.Tests", "PHP.WebServiceConcept.Tests\PHP.WebServiceConcept.Tests.csproj", "{A985AA8A-B6DD-41F5-A74B-E124244FA428}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF525E0D-8CF3-40A9-B72E-F59BE828ECCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF525E0D-8CF3-40A9-B72E-F59BE828ECCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF525E0D-8CF3-40A9-B72E-F59BE828ECCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF525E0D-8CF3-40A9-B72E-F59BE828ECCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B30382B1-5D65-496A-8663-E19DE68C010F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B30382B1-5D65-496A-8663-E19DE68C010F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B30382B1-5D65-496A-8663-E19DE68C010F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B30382B1-5D65-496A-8663-E19DE68C010F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51532CBF-26F8-4C34-9253-84F1942CAF80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51532CBF-26F8-4C34-9253-84F1942CAF80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51532CBF-26F8-4C34-9253-84F1942CAF80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51532CBF-26F8-4C34-9253-84F1942CAF80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A985AA8A-B6DD-41F5-A74B-E124244FA428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A985AA8A-B6DD-41F5-A74B-E124244FA428}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A985AA8A-B6DD-41F5-A74B-E124244FA428}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A985AA8A-B6DD-41F5-A74B-E124244FA428}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB85A3C3-FC64-45A4-AB8C-280D0B316A40}
+	EndGlobalSection
+EndGlobal
