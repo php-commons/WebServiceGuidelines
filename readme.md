@@ -18,7 +18,7 @@ The exercises are as follows:
 
 5. If you haven't, update your unit tests. Also, make a note to always keep your unit tests and changes in sync.
 
-This should give an good start on using ASP .Net Core and basic Domain Driving Design concepts. For those that are motivated, the following are bonus exercises.
+This should give an good start on using ASP .Net Core and basic Domain Driven Design concepts. For those that are motivated, the following are bonus exercises.
 
 1. The persistence layer is all in memory. Replace it with a database-backed store using Entity Framework core. 
 
