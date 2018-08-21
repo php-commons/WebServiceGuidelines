@@ -7,16 +7,22 @@ using PHP.WebServiceConcept.Domain.Queries;
 namespace PHP.WebServiceConcept.AccountWebService.Controllers
 {
     [Route("api/[controller]")]
-    public class TransactionController : Controller
+    public class TransactionsController : Controller
     {
         private readonly ITransactionQueryProcessor _transactionQueryProcessor;
 
-        public TransactionController(ITransactionQueryProcessor transactionQueryProcessor)
+        public TransactionsController(ITransactionQueryProcessor transactionQueryProcessor)
         {
             _transactionQueryProcessor = transactionQueryProcessor;
         }
 
-        [HttpGet("{transactionId}")]
+        // GET: /api/transactions/{transactionId}
+        /// <summary>
+        /// Get transaction details given a transactionId. 
+        /// </summary>
+        /// <param name="transactionId"></param>
+        /// <returns></returns>
+        [HttpGet("{transactionId}")]        
         public async Task<ActionResult> GetTransactionDetailsAsync(string transactionId)
         {
             if (String.IsNullOrEmpty(transactionId))

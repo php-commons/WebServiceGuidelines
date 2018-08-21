@@ -26,15 +26,15 @@ namespace PHP.WebServiceConcept.Domain.Services
 
             var account = await _accountRepository.GetAccountAsync(command.AccountId);
             if (account == null)
-                throw new CommandProcessingException(
-                    String.Format("No account with id {0} was found.",command.AccountId));
+                throw new ResourceNotFoundException(
+                    "Accounts", $"No account with id {command.AccountId} was found.");
 
             var newTransaction =
                 new Transaction(account, Transaction.DepositTransactionType, command.Amount);
 
             var saved = await _transactionRepository.AddNewTransactionAsync(newTransaction);
             if (saved == false)
-                return null;
+                throw new CommandProcessingException("Could not save transaction");
 
             return new CreateTransactionResponse(newTransaction.TransactionId);
         }
@@ -46,8 +46,8 @@ namespace PHP.WebServiceConcept.Domain.Services
 
             var account = await _accountRepository.GetAccountAsync(command.AccountId);
             if (account == null)
-                throw new CommandProcessingException(String.Format("No account with id {0} was found.",
-                    command.AccountId));
+                throw new ResourceNotFoundException(
+                    "Accounts", $"No account with id {command.AccountId} was found.");
 
             var newTransaction =
                 new Transaction(account, Transaction.WithdrawalTransactionType, command.Amount);
